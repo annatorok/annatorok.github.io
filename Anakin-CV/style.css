@@ -1,0 +1,77 @@
+body, p, h1 {
+  margin: 0;
+  letter-spacing: 0.6px;
+  font-weight: lighter;
+  color: #222;
+}
+
+header {
+  font-family: 'Abril Fatface', cursive;
+  background: url(anakin.png);
+  background-size: cover;
+  height: 400px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  padding-left: 290px;
+  padding-top: 245px;
+  line-height: 50px;
+  font-size: 34px;
+}
+
+header h1 span{
+  font-size: 2.1em;
+}
+
+section {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  color: #222;
+  width: 685px;
+  margin-left: 290px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 55px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+blockquote {
+  font-family: 'Abril Fatface', cursive;
+  width: 700px;
+  font-size: 45px;
+  background: #444444 url(quote.png) no-repeat;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 55px auto;
+  padding: 50px;
+}
+
+h3 + p {
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5em;
+  margin: 30px 0px 40px 0px;
+}
+
+section > h4 {
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  font-size: 16px;
+}
+
+h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 715px;
+  border: 2px solid;
+}
