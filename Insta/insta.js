@@ -12,7 +12,6 @@ function getGoogleRequest(event) {
   var xhr = new XMLHttpRequest();
   var location = inputField.value;
   xhr.open('GET', googleUrl + location);
-  xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onload = function() {
     if (xhr.readyState === xhr.DONE) {
       var response = JSON.parse(xhr.response);
@@ -29,7 +28,6 @@ function getGoogleRequest(event) {
 function getInstaRequest(latitude, longitude) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', instaUrl + latitude + '&lng=' + longitude + '&access_token=' + access_token)
-  xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onload = function() {
     if (xhr.readyState === xhr.DONE) {
       // response.forEach(function (e) {
@@ -40,6 +38,5 @@ function getInstaRequest(latitude, longitude) {
   };
   xhr.send();
 }
-
 
 searchButton.addEventListener('click', getGoogleRequest);
