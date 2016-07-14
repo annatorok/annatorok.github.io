@@ -27,7 +27,9 @@ function getGoogleRequest(event) {
 
 function getInstaRequest(latitude, longitude) {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', instaUrl + latitude + '&lng=' + longitude + '&access_token=' + access_token)
+  xhr.open('GET', instaUrl + latitude + '&lng=' + longitude + '&access_token=' + access_token);
+  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+  xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onload = function() {
     if (xhr.readyState === xhr.DONE) {
       // response.forEach(function (e) {
